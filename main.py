@@ -12,7 +12,7 @@ LIGHTBULB_DEVICE_ID = os.environ['LIGHTBULB_DEVICE_ID']
 openapi = TuyaOpenAPI(API_ENDPOINT, ACCESS_ID, ACCESS_KEY)
 openapi.connect()
 
-#Function that changes colour of bulb
+# Function that changes colour of bulb
 def set_colour(colour):
     commands = {'commands': [
                                 { 
@@ -25,6 +25,7 @@ def set_colour(colour):
 
     openapi.post(f'/v1.0/iot-03/devices/{LIGHTBULB_DEVICE_ID}/commands', commands)
 
+# Function that sets mode of lightbulb [white, colour, scene, music]
 def light_mode(mode):
     commands = {'commands': [
                                 {
