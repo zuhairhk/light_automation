@@ -81,7 +81,7 @@ def voice_to_colour(text):
     iValue = [0, 30, 45, 120, 180, 245, 300]
 
     for i in range(len(colours)):
-        if text == colours[i]:
+        if colours[i] in text:
             return iValue[i]
 
 
