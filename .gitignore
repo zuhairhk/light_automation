@@ -2,6 +2,7 @@
 commands.txt
 test.py
 ideas.txt
-Light Controller.exe
 dist
 test.exe
+light_controller.py
+light_controller.exe
