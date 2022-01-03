@@ -115,6 +115,8 @@ def initiate_command(wordList):
         if colours[i] in wordList:
             intColour = voice_to_colour(wordList)
             set_colour(intColour)
+    if 'white' in wordList:
+        light_mode('white')
     if 'manual'in wordList:
         manual_commands()
 
